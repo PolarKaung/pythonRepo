@@ -14,4 +14,4 @@ if (a.shape == b.shape):
     print(c)
 
 else:
-    print("Matrix substraction can't be done.")
+    print("Matrix subtraction can't be done.")
