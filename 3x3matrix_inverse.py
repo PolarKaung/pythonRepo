@@ -51,7 +51,11 @@ else:
 			for j in range(len(a[0])):
 				iden[i,k] += a[i,j]*inv[j,k]
 	print("The product of a matrix and its inverse:\n",iden)
-	print("\nThe product of a matrix and its inverse is always an identity matrix")
+	idenI = np.array([[1,0,0],[0,1,0],[0,0,1]])
+	if np.array_equal(iden,idenI):
+		print("\nThe inverse is correct")
+	else:
+		print("\nThe inverse is incorrect")
 	
 
 
