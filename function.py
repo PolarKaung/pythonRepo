@@ -24,16 +24,15 @@ def M33inverse(A):
             minors[m,n] = detEle[0]*detEle[3] - detEle[1]*detEle[2]
             cofactors[m,n] = ((-1)**m * (-1)**n) * minors[m,n]
     det = np.dot(A[0,:],cofactors[0,:])
-
-    for m in range(AShape[0]):
-        for n in range(AShape[1]):
-            adjoint[n,m] = cofactors[m,n]
-    try:
+    if det!= 0:
+        for m in range(AShape[0]):
+            for n in range(AShape[1]):
+                adjoint[n,m] = cofactors[m,n]
         A_inv = adjoint * (1/det)
-    except ZeroDivisionError:
-        print("Det becomes zero. Please choose another matrix to solve.")
-    return A_inv
-
+        return A_inv
+    else:
+        return print("Det becomes zero. Please choose another matrix to solve.")
+        
 def inverse_checking(x,y):
     B = np.zeros([len(x),len(y[0])])
     if len(x[0]) == len(y):
