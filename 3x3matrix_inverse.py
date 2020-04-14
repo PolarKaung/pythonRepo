@@ -51,8 +51,8 @@ else:
 			for j in range(len(a[0])):
 				iden[i,k] += a[i,j]*inv[j,k]
 	print("The product of a matrix and its inverse:\n",iden)
-	print("\nThe product of a matrix and its inverse is always an identity matrix")			
-
+	print("\nThe product of a matrix and its inverse is always an identity matrix")
+	
 
 
 		
