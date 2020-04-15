@@ -1,4 +1,4 @@
-alphabet = list(chr(x) for x in range(0x61,0x7b)) #alphabet list
+alphabet = tuple(chr(x) for x in range(0x61,0x7b)) #alphabet list
 
 while True:
     sentence = input("Enter the sentence\n").lower()#not to be case sensitive
