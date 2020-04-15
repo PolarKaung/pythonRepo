@@ -1,0 +1,8 @@
+
+num = int(input("enter number of cameras sold"))
+bsa = 1500
+cor = 0.02
+cfee = num*200
+tot = cfee+bsa
+tot1 = tot*cor
+print(" total salary %f " %(tot1+tot) )
