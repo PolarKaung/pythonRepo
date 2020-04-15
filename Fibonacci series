@@ -1,0 +1,7 @@
+a=1
+b=2
+i=1
+while i < 20:
+ a,b = b,a+b
+ print(" %d " %b , end=" ,")
+ i+=2
