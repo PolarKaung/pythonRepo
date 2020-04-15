@@ -1,12 +1,9 @@
 import numpy as np
 
-
 terms = int(input("enter the number of terms : "))
-
 
 if terms <= 0:
     print("\nplease enter positive number.")
-
 
 else:
     firstD = int(input("\nenter the value for first digit ="))
