@@ -12,4 +12,7 @@ c = b*0.02
 
 net_salary = bs + bonus + c
 
-print("The net salary of the camera salesman is: ", net_salary)
+print("Basic salary = ", bs)
+print("Bonus = ", bonus)
+print("Commission = ", c)
+print("Net salary = ", net_salary)
