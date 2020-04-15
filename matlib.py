@@ -1,5 +1,16 @@
 import numpy as np
 
+def data(A):
+    
+    m = int (input("Enter the number of rows: "))
+    n = int(input("Enter the number of columns: "))
+    A = np.zeros((m,n))
+    a = A.shape
+    for i in range (a[0]):
+        for j in range (a[1]):
+            A[i,j] = int(input("Enter the element of matrix: "))
+    return A
+  
 def transpose(A):
                     
     for m in range(A.shape[0]):
