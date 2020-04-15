@@ -1,4 +1,4 @@
-
+camera_sold = int(input("Enter the number of cameras sold = "))
 camera_price = float(input("Enter the total price of cameras sold ="))
 
 basic_salary = 1500
