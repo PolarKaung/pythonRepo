@@ -1,5 +1,3 @@
-#faibonacci series with user input and possibly user defined starting two digits
-
 import numpy as np
 
 
@@ -24,18 +22,3 @@ else:
             firstD = secondD
             secondD = nD
                 
-
-
-#if terms == 1:
-#    print("\nFor %d terms,\nFibonacci sequence is"%terms)
-#    print(firstD)
-#elif terms == 2:
-#    print("\nFor %d terms,\nFibonacci sequence is"%terms)
-#    print(firstD)
-#    print(secondD)
-#else:
-#    for i in np.arange(start = 3, stop = terms):
-#        nD = firstD + secondD
-#        print (nD)
-#        firstD = secondD
-#        secondD = nD
