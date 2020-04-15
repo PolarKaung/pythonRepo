@@ -12,7 +12,8 @@ def data(A):
     return A
   
 def transpose(A):
-                    
+    
+    AT = np.zeros(A.shape)                
     for m in range(A.shape[0]):
          for n in range(A.shape[1]):
              AT[m,n] = A[n,m]
