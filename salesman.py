@@ -1,0 +1,10 @@
+money = 1500
+bonus_price = 200
+percent = 2/100
+camera = int(input("Enter the number of camera: "))
+price = float(input("Enter the total prices: "))
+bonus = (bonus_price * camera)
+commision = (percent * camera * money)
+print("Bonus        = %6.2f" , bonus)
+print("Commision    = %6.2f" , commision)
+print("Total salary = %6.2f" , (money + bonus + commision))
