@@ -2,7 +2,6 @@ A = [input("Enter a senstence or a word to check: ")]
 output = []
 
 B = []
-D = []
 B[:0] = A[0]
 
 print("The original word: ",B)
