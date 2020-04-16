@@ -3,6 +3,7 @@ stick = 21
 you = 0
 com = 0
 
+#Already think for user's moves and make a fixed number
 while True:
     if stick <=21 and stick>=4:
         print("\nThe number of stick left: %d" %stick)
