@@ -4,7 +4,7 @@ import random
 print("Three will be 21 sticks. The one whoever takes the last stick will lose!")
 stick = 21
 
-turn = random.randint(0,1)
+turn = random.randint(0,1) #to take turn
 
 if turn == 0:
     print("Its your turn")
@@ -28,14 +28,14 @@ if turn == 0:
                     print("The computer took %d" %take)
                     stick  -= take
                     print("The number of sticks left : %d" %stick)
-            elif (4 <= stick and stick >= 1) :
+            elif (4 <= stick and stick >= 1) : #in order not to choose 4 when there's only 4 sticks
                 print("\nComputer: ")
                 take = random.randint(1,3)
                 print("The computer took %d" %take)
                 stick  -= take
                 print("The number of sticks left : %d" %stick)
                 
-            elif (3<= stick and stick >= 1 ):
+            elif (3<= stick and stick >= 1 ): #in order not to choose 4 when there's only 3 sticks
                 print("\nComputer: ")
                 take = random.randint(1,2)
                 print("The computer took %d" %take)
