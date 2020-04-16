@@ -28,14 +28,14 @@ if turn == 0:
                     print("The computer took %d" %take)
                     stick  -= take
                     print("The number of sticks left : %d" %stick)
-            elif (4 <= stick and stick >= 1) : #in order not to choose 4 when there's only 4 sticks
+            elif (4 <= stick and stick >= 1) : #in order not to choose 4 when there're only 4 sticks
                 print("\nComputer: ")
                 take = random.randint(1,3)
                 print("The computer took %d" %take)
                 stick  -= take
                 print("The number of sticks left : %d" %stick)
                 
-            elif (3<= stick and stick >= 1 ): #in order not to choose 4 when there's only 3 sticks
+            elif (3<= stick and stick >= 1 ): #in order not to choose 4 when there're only 3 left
                 print("\nComputer: ")
                 take = random.randint(1,2)
                 print("The computer took %d" %take)
