@@ -1,0 +1,16 @@
+ini_dict = {'a' : 'kyaw', 'b' : 'saw', 'c': 'lynn'} 
+  
+print("intial_dictionary", str(ini_dict)) 
+  
+keys = [] 
+values = [] 
+items = ini_dict.items()
+print(items)
+for i in items: 
+    keys.append(i[0])
+    values.append(i[1]) 
+  
+
+print ("keys :", str(keys)) 
+print ("values :", str(values))
+
