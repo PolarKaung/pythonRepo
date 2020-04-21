@@ -1,0 +1,24 @@
+A = input("enter anything you want")
+A = A.lower()
+A = list(A)
+length = len(A)
+B=[]
+C=[]
+for i in range(length):
+       x = ord(A[i])
+       y = A[i]
+       if  x < 97 or x >122:
+          B.append(y)
+       else:
+          C.append(y)    
+       
+count = 0
+length1=len(C)
+for i in range(length1):
+     if C[i]==C[length1-i-1]:
+        count+=1
+
+if count==length1:
+    print("\t Given input is palindrome")
+else:
+    print("\t Given input is not paliondrome")
