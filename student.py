@@ -64,6 +64,7 @@ if os.path.isfile('student.csv'):
     
     if ans == 'Y':
         while True:
+          print("Enter s to stop")
             B = input("Enter the header %d: "%count)
             count+=1
             if (B == 's'):
@@ -104,6 +105,7 @@ if os.path.isfile('student.csv'):
             print(Header)
 
         while True:
+           print("Enter n to stop")
             for i in range(len(Header)):
                 C = input("Enter the %s for student: "%(Header[i]))
                 if C == 'n':
@@ -146,7 +148,9 @@ if os.path.isfile('student.csv'):
             header = next(F)
             print(header)
         while True:
+            print("Enter n to stop")
             for i in range(len(header)):
+               
                 C = input("Enter the %s for student: "%(header[i]))
                 if C == 'n':
                     break
@@ -185,6 +189,7 @@ else:
     print ("File does not exist")
     print("Let's create a file\nEnter s to stop adding header")
     while True:
+        print("Enter s to stop")
         B = input("Enter the header %d: "%count)
         count+=1
         if (B == 's'):
@@ -194,6 +199,7 @@ else:
             header.append(B)
     count = 1
     while True:
+        print("Enter n to stop")
         for i in range(len(header)):
             C = input("Enter the %s for student: "%(header[i]))
             if C == 'n':
