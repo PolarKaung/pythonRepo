@@ -60,7 +60,7 @@ if os.path.isfile('student.csv'):
         print("The already added headers are\n",header)
     ans = input("Waana add more?\n Y/N: ")
     
-    #htet htae yin
+    # htet htae yin
     
     if ans == 'Y':
         while True:
