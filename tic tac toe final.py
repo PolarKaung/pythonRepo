@@ -38,7 +38,7 @@ def playerMove():
             
 
 def compMove():
-##    possibleMoves = [x for x, letter in enumerate(board) if letter == ' ' and x != 0]
+
     possibleMoves = []
     for i in range(len(board)):           #nay yar loot shr tr
         if board[i] == ' ':
@@ -46,7 +46,7 @@ def compMove():
     possibleMoves.remove(0)            
     move = 0
 
-    for let in ['O', 'X']:
+    for let in ['O', 'X']:               #thu ng ng lr, ko ng ng lr sit tr
         for i in possibleMoves:
             boardCopy = board[:]
             boardCopy[i] = let
@@ -54,26 +54,26 @@ def compMove():
                 move = i
                 return move
 
-    cornersOpen = []
+    corners = []
     for i in possibleMoves:
         if i in [1,3,7,9]:
-            cornersOpen.append(i)
+            corners.append(i)
             
-    if len(cornersOpen) > 0:
-        move = selectRandom(cornersOpen)
+    if len(corners) > 0:                    # corner ta khu mha ma shi mhr soe loh
+        move = selectRandom(corners)
         return move
 
-    if 5 in possibleMoves:
+    if 5 in possibleMoves:                  # a hlal ko u tr
         move = 5
         return move
 
-    edgesOpen = []
+    edges = []
     for i in possibleMoves:
         if i in [2,4,6,8]:
-            edgesOpen.append(i)
+            edges.append(i)
             
-    if len(edgesOpen) > 0:
-        move = selectRandom(edgesOpen)
+    if len(edges) > 0:
+        move = selectRandom(edges)
         
     return move
 
