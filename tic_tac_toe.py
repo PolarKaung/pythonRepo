@@ -113,11 +113,11 @@ while True:
 	print("Choose the position you want to insert your letter")	
 	print("The example board is as follow:")
 	egboard()
-	printboard(board)
 	turn = np.random.randint(1,3)			#randomly check, whose turn first
 	
 	if turn == 1:					#player play first
 		print("\nYour turn first")
+		printboard(board)
 		try:
 			while not(full(board)):
 				if not(win(board, 'O')):
