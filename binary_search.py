@@ -32,7 +32,7 @@ if not num in A:
     
 LowToHigh(A)
 
-if num == A[-1]:
+if num == A[-1]:                        # if the user desired number is at the index of -1
     print(num,"is at index %d"%(B-1))
     
 l = 0       #lower
@@ -40,7 +40,7 @@ u = B-1     #upper
 
 while l<= u:
     
-    mid = (l+u)//2
+    mid = (l+u)//2              # a pyae kane pl lo loh
     if num == A[mid]:
         print(num,"is at index %d"%mid)
         break
