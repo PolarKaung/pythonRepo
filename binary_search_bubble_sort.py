@@ -1,4 +1,4 @@
-def inp(ip):
+def inp(ip):						#input an array
 	arr = []
 	for i in range(0,ip):
 		while True:
@@ -9,8 +9,8 @@ def inp(ip):
 			except ValueError:
 				print("This is integer array, You must enter integer")
 	return arr
-	
-def bub(a):
+					
+def bub(a):						#bubble sorting in ascending order
 	n = len(a)
 	for j in range(1,n):
 		swp = False
@@ -24,7 +24,7 @@ def bub(a):
 	return a
 	
 
-def bins(c,ele):
+def bins(c,ele):					#binary searching
 	first = 0
 	last = len(c)-1
 	while first <= last:
@@ -39,7 +39,7 @@ def bins(c,ele):
 	
 	return -1
 	
-while True:
+while True:						#starting with user input array size and elements
 	print("\nWelcome to bubble sorting and binary searching algorithm!!")
 	print("Let's search number in an array")
 	while True:
@@ -55,8 +55,8 @@ while True:
 	sor = bub(iarr)
 	print("Sorted array is:",sor)
 	
-	ano = True
-	while ano:
+	ano = True					#to search a desired element	
+	while ano:				
 		while True:
 			try:
 				x = int(input("\nEnter the element you want to search:"))
@@ -69,7 +69,7 @@ while True:
 			print("\nElement %d is at index %d of the array" %(x,pos))
 		else: 
 			print("\nElement %d is not in the array" %x)
-		while True:
+		while True:				#to search another element in this array
 			another = input("\nDo you want to search another element in this array? (y/n):")
 			if another != 'y' and another != 'n':
 				print("Wrong input, Try agian")
@@ -79,7 +79,7 @@ while True:
 				ano = False
 				break
 	
-	while True:
+	while True:					#to start new array
 		again = input("\nDo you want to start again with new array? (y/n):")
 		if again != 'y' and again != 'n':
 			print("\nWrong input, Try again")
