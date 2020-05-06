@@ -27,8 +27,9 @@ A = list(A)             # pee tot list pyan pygg tr :3
 
 B = len(A)
 num = int(input("Please type the number to search for: "))
-
-
+if not num in A:
+    print("Your input number is not present in given input list!")
+    
 LowToHigh(A)
 
 if num == A[-1]:
